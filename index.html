@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка для Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .url-button {
+            display: inline-block;
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .url-button:hover {
+            background-color: #333333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .url-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="https://t.me/test_egprog_bot?start=339fa89a-916b-11f0-a230-72d327724f1a" class="url-button">
+            Перейти в бота
+        </a>
+    </div>
+
+    <script>
+        // Дополнительный JavaScript для отслеживания кликов
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.querySelector('.url-button');
+            
+            button.addEventListener('click', function() {
+                console.log('Кнопка Google была нажата');
+                // Можно добавить дополнительную логику здесь
+            });
+        });
+    </script>
+</body>
+</html>
